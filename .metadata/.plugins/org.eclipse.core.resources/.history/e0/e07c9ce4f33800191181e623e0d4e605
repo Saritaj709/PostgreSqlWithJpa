@@ -1,0 +1,54 @@
+package com.employee.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.employee.bean.Employee;
+import com.employee.dao.EmployeeDao;
+@Service
+public class EmployeeServiceImpl implements EmployeeService {
+
+	@Autowired
+	EmployeeDao employeeDao;
+
+	@Override
+	public void addemployee(Employee employee) {
+		employeeDao.save(employee);
+
+	}
+
+	@Override
+	public void updateEmployee(String contactNo,String email) throws Exception {
+		Optional<Employee> employee=employeeDao.findByEmail(email);
+		if(!employee.isPresent()) {
+			throw new Exception("employee not found");
+		}
+		employee.get().setContactNo(contactNo);
+		employeeDao.save(employee.get());
+		
+	}
+
+	@Override
+	public void deleteEmployee(String email) {
+		Optional<Employee> employee=employeeDao.findByEmail(email);
+		if(!employee.isPresent()) {
+			throw new Exception("employee not found");
+		}
+		employeeDao.remove(employee.get());
+	}
+
+	@Override
+	public List<Employee> getEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getEmployeeByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

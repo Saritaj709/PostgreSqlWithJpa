@@ -1,0 +1,46 @@
+package com.employee.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.employee.bean.Employee;
+import com.employee.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService employeeService;
+
+	@PostMapping(value = "/addEmployee")
+	public void addemployee(@RequestBody Employee employee) {
+		employeeService.addemployee(employee);
+	}
+	
+	@DeleteMapping(value="/deleteEmployee/{email}")
+	public void deleteEmployee(@PathVariable(value="email")String email) throws Exception {
+		employeeService.deleteEmployee(email);
+		
+	}
+	@PutMapping(value="/update/{email}")
+	public void updateEmployee(@PathVariable(value="email")String email,@RequestParam(value="contactNo")String contactNo) throws Exception {
+		employeeService.updateEmployee(email, contactNo);
+	}
+	
+	@PostMapping(value="/getEmployeeByEmail/{email}")
+	public Employee getEmployeeByEmail(@PathVariable(value="email")String email) throws Exception {
+		return employeeService.getEmployeeByEmail(email);
+	}
+	
+	@GetMapping(value="/getAllEmployees")
+	public List<Employee> getemployees(){
+		return employeeService.getEmployee();
+	}
+}

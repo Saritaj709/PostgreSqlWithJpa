@@ -1,0 +1,29 @@
+package com.employee.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.employee.bean.Employee;
+import com.employee.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService employeeService;
+
+	@RequestMapping(method = RequestMethod.POST, value = "/add")
+	public void addemployee(@RequestBody Employee employee) {
+		employeeService.addemployee(employee);
+	}
+	
+	@DeleteMapping(value="/deleteEmployee")
+	public void deleteEmployee(@PathVariable(value="name")String name) {
+		
+	}
+}

@@ -1,0 +1,31 @@
+package com.employee.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.employee.bean.Employee;
+import com.employee.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+
+	@Autowired
+	EmployeeService employeeService;
+
+	@RequestMapping(method = RequestMethod.POST, value = "/add")
+	public void addemployee(@RequestBody Employee employee) {
+		System.out.println("hi");
+		employeeService.addemployee(employee);
+	}
+
+	/*
+	 * public void add() { System.out.println("done1");
+	 * 
+	 * Employee employee = new Employee(); employee.setId(1);
+	 * employee.setName("sarita"); employeeService.addemployee(employee);
+	 * System.out.println("done"); }
+	 */
+}
