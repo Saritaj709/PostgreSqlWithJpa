@@ -6,36 +6,35 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.employee.bean.Employee;
 import com.employee.dao.EmployeeDao;
+import com.employee.exception.UserNotFoundException;
+import com.employee.model.Employee;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
-	EmployeeDao employeeDao;
+	private EmployeeDao employeeDao;
 
 	@Override
-	public void addemployee(Employee employee) throws Exception {
-		
-		 Optional<Employee> optionalEmployee = employeeDao.findByEmailId(employee.getEmailId());
+	public void addemployee(Employee employee) {
 
-			//Employee employee = employeeDao.findByEmailId(email);
+		Optional<Employee> optionalEmployee = employeeDao.findByEmailId(employee.getEmailId());
 
-				if (optionalEmployee.isPresent()) {
-					throw new Exception("employee with given emailId already present,enter different emailId to register");
-				}
+		if (optionalEmployee.isPresent()) {
+			throw new UserNotFoundException(
+					"employee with given emailId already present,enter different emailId to register");
+		}
 		employeeDao.save(employee);
 
 	}
 
 	@Override
 	public void updateEmployee(String email, String contactNo) throws Exception {
-		 Optional<Employee> employee = employeeDao.findByEmailId(email);
-		//Employee employee = employeeDao.findByEmailId(email);
+		Optional<Employee> employee = employeeDao.findByEmailId(email);
 
 		if (!employee.isPresent()) {
-			throw new Exception("employee not found");
+			throw new UserNotFoundException("employee not found");
 		}
 		employee.get().setContactNo(contactNo);
 		employeeDao.save(employee.get());
@@ -44,27 +43,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void deleteEmployee(String email) throws Exception {
-		 Optional<Employee> employee = employeeDao.findByEmailId(email);
+		Optional<Employee> employee = employeeDao.findByEmailId(email);
 
-		//Employee employee = employeeDao.findByEmailId(email);
-
-			if (!employee.isPresent()) {
-				throw new Exception("employee not found");
-			}
+		if (!employee.isPresent()) {
+			throw new UserNotFoundException("employee not found");
+		}
 		employeeDao.delete(employee.get());
 
 	}
 
 	@Override
 	public Employee getEmployeeByEmail(String email) throws Exception {
-		 Optional<Employee> employee = employeeDao.findByEmailId(email);
+		Optional<Employee> employee = employeeDao.findByEmailId(email);
 
-		//Employee employee = employeeDao.findByEmailId(email);
-
-		
-		 if (!employee.isPresent()) {
-				throw new Exception("employee not found");
-			}
+		if (!employee.isPresent()) {
+			throw new UserNotFoundException("employee not found");
+		}
 
 		return employee.get();
 

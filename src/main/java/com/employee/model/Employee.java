@@ -1,4 +1,4 @@
-package com.employee.bean;
+package com.employee.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
