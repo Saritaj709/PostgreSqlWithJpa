@@ -1,0 +1,95 @@
+{
+	"TC-001": {
+		"request": {
+			"url": "/addEmployee",
+			"headers": {
+				
+			},
+			"body": {
+				
+				"name": "sarita",
+				"emailId": "sarita@gmail.com",
+				"contactNo": "8116501077"
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"message": "added successfully",
+				"status": 1
+			}
+		}
+	},
+	"TC-002": {
+		"request": {
+			"url": "/getEmployeeByEmailId/sarita@gmail.com",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "GET"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"id": 1,
+				"name": "sarita",
+				"emailId": "sarita@gmail.com",
+				"contactNo": "8116501077"
+			}
+		}
+	},
+	"TC-003": {
+		"request": {
+			"url": "/updateEmployee/sarita@gmail.com?contactNo=8116501066",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "PUT"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"message": "updated successfully",
+				"status": 2
+			}
+		}
+	},
+	"TC-004": {
+		"request": {
+			"url": "/deleteEmployee/sarita@gmail.com",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "DELETE"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"message": "deleted successfully",
+				"status": 4
+			}
+		}
+	}
+}
