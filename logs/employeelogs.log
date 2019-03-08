@@ -1,0 +1,127 @@
+08-03-2019 11:32:27.818 [main] INFO  com.employee.EmployeeApplication.logStarting - Starting EmployeeApplication on DIN16004850 with PID 6964 (C:\Users\sarjaisw\Desktop\SAP\videos\employee\target\classes started by sarjaisw in C:\Users\sarjaisw\Desktop\SAP\videos\employee)
+08-03-2019 11:32:27.818 [main] INFO  com.employee.EmployeeApplication.logStartupProfileInfo - The following profiles are active: dev
+08-03-2019 11:32:28.353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+08-03-2019 11:32:28.415 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
+08-03-2019 11:32:28.684 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$faa7ef61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-03-2019 11:32:29.083 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-03-2019 11:32:29.103 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-03-2019 11:32:29.103 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.16]
+08-03-2019 11:32:29.113 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\softwares\nodejs\setup;D:\softwares\Microsoft VS Code\bin;D:\softwares\python\pythonscript\Python36-32;D:\softwares\python\pythonscript\Python36-32\Scripts;C:\Users\sarjaisw\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Users\sarjaisw\AppData\Roaming\npm;C:\Users\sarjaisw\AppData\Roaming\Cloud Foundry;C:\Users\sarjaisw\Desktop\SAP\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\sarjaisw\Desktop\SAP\cloudConnector\sapcc-2.11.3-windows-x64;D:\softwares\vim\vim70os2\vim\vim70;.]
+08-03-2019 11:32:29.203 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-03-2019 11:32:29.203 [main] DEBUG o.s.web.context.ContextLoader.prepareWebApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+08-03-2019 11:32:29.203 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1355 ms
+08-03-2019 11:32:29.356 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+08-03-2019 11:32:29.544 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+08-03-2019 11:32:29.656 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08-03-2019 11:32:29.717 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+08-03-2019 11:32:29.717 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+08-03-2019 11:32:29.827 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+08-03-2019 11:32:29.940 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+08-03-2019 11:32:30.080 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl.useContextualLobCreation - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+08-03-2019 11:32:30.080 [main] INFO  org.hibernate.type.BasicTypeRegistry.register - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@c269425
+08-03-2019 11:32:30.605 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50085d9c'
+08-03-2019 11:32:30.616 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08-03-2019 11:32:31.095 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+08-03-2019 11:32:31.095 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+08-03-2019 11:32:31.308 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+08-03-2019 11:32:31.328 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+08-03-2019 11:32:31.348 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08-03-2019 11:32:31.369 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	c.e.c.EmployeeController:
+	{GET /getEmployeeByEmailId/{emailId}}: getEmployeeByEmail(String)
+	{POST /addEmployee}: addemployee(Employee)
+	{DELETE /deleteEmployee/{emailId}}: deleteEmployee(String)
+	{PUT /updateEmployee/{emailId}}: updateEmployee(String,String)
+	{GET /getAllEmployees}: getEmployees()
+08-03-2019 11:32:31.369 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+08-03-2019 11:32:31.370 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized - 7 mappings in 'requestMappingHandlerMapping'
+08-03-2019 11:32:31.400 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping.detectHandlers - Detected 0 mappings in 'beanNameHandlerMapping'
+08-03-2019 11:32:31.410 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+08-03-2019 11:32:31.410 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+08-03-2019 11:32:31.410 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+08-03-2019 11:32:31.420 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+08-03-2019 11:32:31.591 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+08-03-2019 11:32:31.594 [main] INFO  com.employee.EmployeeApplication.logStarted - Started EmployeeApplication in 4.09 seconds (JVM running for 4.62)
+08-03-2019 11:32:36.086 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08-03-2019 11:32:36.086 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+08-03-2019 11:32:36.087 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initMultipartResolver - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@77ea806f
+08-03-2019 11:32:36.088 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initLocaleResolver - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+08-03-2019 11:32:36.090 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initThemeResolver - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+08-03-2019 11:32:36.093 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initRequestToViewNameTranslator - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+08-03-2019 11:32:36.097 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initFlashMapManager - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+08-03-2019 11:32:36.098 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+08-03-2019 11:32:36.098 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 11 ms
+08-03-2019 11:32:36.105 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "//getEmployeeByEmailId/lakshmi@gmail.com", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+08-03-2019 11:32:36.127 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.Employee> com.employee.controller.EmployeeController.getEmployeeByEmail(java.lang.String) throws java.lang.Exception
+08-03-2019 11:32:36.137 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [lakshmi@gmail.com]
+08-03-2019 11:32:36.137 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:36.137 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployeeByEmail
+08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployeeByEmail
+08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - findByEmailId
+08-03-2019 11:32:36.167 [http-nio-8080-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  findByEmailId
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployeeByEmail
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] ERROR com.employee.aop.AspectNotification.afterThrowing - exception method getEmployeeByEmail
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployeeByEmail
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] ERROR com.employee.aop.AspectNotification.afterThrowing - exception method getEmployeeByEmail
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException - Using @ExceptionHandler public org.springframework.http.ResponseEntity<com.employee.model.ResponseDTO> com.employee.exception.GlobalExceptionHandler.checkUser(com.employee.exception.UserNotFoundException)
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [com.employee.exception.UserNotFoundException: employee not found]
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - checkUser
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] ERROR c.e.controller.EmployeeController.checkUser - User not found exception
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  checkUser
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [com.employee.exception.UserNotFoundException: employee not found]
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] DEBUG com.employee.aop.AspectNotification.afterReturning - logging after returning 
+08-03-2019 11:32:36.247 [http-nio-8080-exec-1] DEBUG com.employee.aop.AspectNotification.afterReturning - checkUser Returned with <400 BAD_REQUEST Bad Request,com.employee.model.ResponseDTO@7116f0f1,[]>
+08-03-2019 11:32:36.287 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+08-03-2019 11:32:36.287 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [com.employee.model.ResponseDTO@7116f0f1]
+08-03-2019 11:32:36.307 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.resolveException - Resolved [com.employee.exception.UserNotFoundException: employee not found]
+08-03-2019 11:32:36.307 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+08-03-2019 11:32:36.307 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 400 BAD_REQUEST, headers={masked}
+08-03-2019 11:32:51.336 [http-nio-8080-exec-4] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - POST "/addEmployee", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+08-03-2019 11:32:51.337 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.ResponseDTO> com.employee.controller.EmployeeController.addemployee(com.employee.model.Employee)
+08-03-2019 11:32:51.391 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug - Read "application/json;charset=UTF-8" to [Employee [id=0, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
+08-03-2019 11:32:51.397 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [Employee [id=0, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
+08-03-2019 11:32:51.397 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:51.397 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - addemployee
+08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - addemployee
+08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - findByEmailId
+08-03-2019 11:32:51.400 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:51.401 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  findByEmailId
+08-03-2019 11:32:51.401 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [saritaj709@gmail.com]
+08-03-2019 11:32:51.407 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:32:51.408 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - save
+08-03-2019 11:32:51.451 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:51.451 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  save
+08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
+08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  addemployee
+08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
+08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  addemployee
+08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
+08-03-2019 11:32:51.454 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+08-03-2019 11:32:51.454 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [com.employee.model.ResponseDTO@5f8c442e]
+08-03-2019 11:32:51.456 [http-nio-8080-exec-4] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+08-03-2019 11:32:51.457 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
+08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+08-03-2019 11:33:20.910 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+08-03-2019 11:33:20.910 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
