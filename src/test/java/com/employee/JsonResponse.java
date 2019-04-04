@@ -11,6 +11,16 @@ public class JsonResponse {
 	private Map<String, Object> headers;
 
 	private Map<String, Object> body;
+	
+	private String message;
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
 
 	public HttpStatus getStatus() {
 		return status;
@@ -35,4 +45,11 @@ public class JsonResponse {
 	public void setBody(Map<String, Object> body) {
 		this.body = body;
 	}
+
+	@Override
+	public String toString() {
+		return "JsonResponse [status=" + status + ", headers=" + headers + ", body=" + body + ", message=" + message
+				+ "]";
+	}
+	
 }

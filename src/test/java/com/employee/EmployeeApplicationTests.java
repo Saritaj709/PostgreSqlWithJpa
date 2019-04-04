@@ -64,20 +64,31 @@ public class EmployeeApplicationTests {
 	}
 
 	@Test
+	public void test11() throws Exception {
+		Json json = cases.get("TC-011");
+		test(json);
+	}
+	//@Test
 	public void test2() throws Exception {
 		Json json = cases.get("TC-002");
 		test(json);
 	}
 
-	@Test
+	//@Test
 	public void test3() throws Exception {
-		Json json = cases.get("TC-003");
+		Json json = cases.get("TC-006");
 		test(json);
 	}
 
 	//@Test
 	public void test4() throws Exception {
 		Json json = cases.get("TC-004");
+		test(json);
+	}
+
+	//@Test
+	public void test7() throws Exception {
+		Json json = cases.get("TC-010");
 		test(json);
 	}
 
@@ -90,11 +101,11 @@ public class EmployeeApplicationTests {
 
 		MockHttpServletResponse response = actions.andReturn().getResponse();
 
-		/*
-		 * for (String key : json.getResponse().getHeaders().keySet()) {
-		 * assertEquals(json.getResponse().getHeaders().get(key),
-		 * response.getHeader(key)); }
-		 */
+		
+		  for (String key : json.getResponse().getHeaders().keySet()) {
+		  assertEquals(json.getResponse().getHeaders().get(key),
+		  response.getHeader(key)); }
+		 
 
 		assertEquals(getResponseBody(json), response.getContentAsString());
 	}
@@ -103,13 +114,22 @@ public class EmployeeApplicationTests {
 		return MockMvcRequestBuilders.request(HttpMethod.resolve(json.getRequest().getMethod()),
 				json.getRequest().getUrl());
 	}
-
+	
 	private String getRequestBody(Json json) throws JsonProcessingException {
 		return mapper.writeValueAsString(json.getRequest().getBody());
 	}
 
 	private String getResponseBody(Json json) throws JsonProcessingException {
+		if(json.getResponseMessage()!=null)
+		{
+			return json.getResponseMessage();
+		}
 		return mapper.writeValueAsString(json.getResponse().getBody());
 	}
-
+	
+	/*
+	 * @SuppressWarnings("unused") private String getResponseMessage(Json json)
+	 * throws JsonProcessingException { return
+	 * mapper.writeValueAsString(json.getResponse().getMessage()); }
+	 */
 }

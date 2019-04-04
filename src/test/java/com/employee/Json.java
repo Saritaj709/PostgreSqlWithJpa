@@ -5,7 +5,7 @@ public class Json {
 	private JsonRequest request;
 
 	private JsonResponse response;
-
+    private String responseMessage;
 	public JsonRequest getRequest() {
 		return request;
 	}
@@ -20,6 +20,14 @@ public class Json {
 
 	public void setResponse(JsonResponse response) {
 		this.response = response;
+	}
+
+	public String getResponseMessage() {
+		return responseMessage;
+	}
+
+	public void setResponseMessage(String responseMessage) {
+		this.responseMessage = responseMessage;
 	}
 	
 }

@@ -6,9 +6,32 @@
 				
 			},
 			"body": {
-				
 				"name": "sarita",
-				"emailId": "sarita@gmail.com",
+				"emailId": "saritaj709@gmail.com",
+				"contactNo": "8116501077"
+			},
+			"method": "POST"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"message": "added successfully",
+				"status": 1
+			}
+		}
+	},
+	"TC-011": {
+		"request": {
+			"url": "/addEmployee",
+			"headers": {
+				
+			},
+			"body": {
+				"name": "sarita2",
+				"emailId": "saritaj@gmail.com",
 				"contactNo": "8116501077"
 			},
 			"method": "POST"
@@ -26,7 +49,7 @@
 	},
 	"TC-002": {
 		"request": {
-			"url": "/getEmployeeByEmailId/sarita@gmail.com",
+			"url": "/getEmployeeByEmailId/saritaj709@gmail.com",
 			"headers": {
 				
 			},
@@ -72,7 +95,7 @@
 	},
 	"TC-004": {
 		"request": {
-			"url": "/deleteEmployee/sarita@gmail.com",
+			"url": "/deleteEmployee/saritaj709@gmail.com",
 			"headers": {
 				
 			},
@@ -91,5 +114,93 @@
 				"status": 4
 			}
 		}
+	},
+	"TC-006": {
+		"request": {
+			"url": "/api/hello",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "GET"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"hello": "world"
+			}
+		}
+	},
+	"TC-007": {
+		"request": {
+			"url": "/api/myname?name=sarita",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "GET"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				"hello": "sarita"
+			}
+		}
+	},
+	"TC-009": {
+		"request": {
+			"url": "/api/myname?name=",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "GET"
+		},
+		"response": {
+			"status": "BAD_REQUEST",
+			"headers": {
+				
+			},
+			"body": {
+				"message": "error, name is not provided",
+				"status": 1
+			}
+		}
+	},
+	"TC-010": {
+		"request": {
+			"url": "/api/myname?name=sarita",
+			"headers": {
+				
+			},
+			"body": {
+				
+			},
+			"method": "GET"
+		},
+		"response": {
+			"status": "OK",
+			"headers": {
+				
+			},
+			"body": {
+				
+			}
+		},
+		"responseMessage": "hello sarita"
 	}
 }
+
+

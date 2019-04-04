@@ -2,6 +2,8 @@ package com.employee.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,10 +24,10 @@ import com.employee.service.EmployeeService;
 public class EmployeeController {
 
 	@Autowired
-	EmployeeService employeeService;
+	private EmployeeService employeeService;
 
 	@PostMapping(value = "/addEmployee")
-	public ResponseEntity<ResponseDTO> addemployee(@RequestBody Employee employee) {
+	public ResponseEntity<ResponseDTO> addemployee(@RequestBody @Valid Employee employee) {
 		employeeService.addemployee(employee);
 		ResponseDTO response=new ResponseDTO();
 		response.setMessage("added successfully");
@@ -68,4 +70,5 @@ public class EmployeeController {
 		List<Employee> employees= employeeService.getEmployees();
 		return new ResponseEntity<>(employees,HttpStatus.OK);
 	}
+
 }

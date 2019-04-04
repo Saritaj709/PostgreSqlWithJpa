@@ -3,7 +3,6 @@ package com.employee;
 import java.util.Map;
 
 import org.springframework.http.HttpHeaders;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 public class JsonRequest {
 	private String url;

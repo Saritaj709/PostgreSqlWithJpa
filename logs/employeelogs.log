@@ -1,127 +1,590 @@
-08-03-2019 11:32:27.818 [main] INFO  com.employee.EmployeeApplication.logStarting - Starting EmployeeApplication on DIN16004850 with PID 6964 (C:\Users\sarjaisw\Desktop\SAP\videos\employee\target\classes started by sarjaisw in C:\Users\sarjaisw\Desktop\SAP\videos\employee)
-08-03-2019 11:32:27.818 [main] INFO  com.employee.EmployeeApplication.logStartupProfileInfo - The following profiles are active: dev
-08-03-2019 11:32:28.353 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
-08-03-2019 11:32:28.415 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 52ms. Found 1 repository interfaces.
-08-03-2019 11:32:28.684 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$faa7ef61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-08-03-2019 11:32:29.083 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
-08-03-2019 11:32:29.103 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
-08-03-2019 11:32:29.103 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.16]
-08-03-2019 11:32:29.113 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\softwares\nodejs\setup;D:\softwares\Microsoft VS Code\bin;D:\softwares\python\pythonscript\Python36-32;D:\softwares\python\pythonscript\Python36-32\Scripts;C:\Users\sarjaisw\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Users\sarjaisw\AppData\Roaming\npm;C:\Users\sarjaisw\AppData\Roaming\Cloud Foundry;C:\Users\sarjaisw\Desktop\SAP\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\sarjaisw\Desktop\SAP\cloudConnector\sapcc-2.11.3-windows-x64;D:\softwares\vim\vim70os2\vim\vim70;.]
-08-03-2019 11:32:29.203 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
-08-03-2019 11:32:29.203 [main] DEBUG o.s.web.context.ContextLoader.prepareWebApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-08-03-2019 11:32:29.203 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1355 ms
-08-03-2019 11:32:29.356 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
-08-03-2019 11:32:29.544 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
-08-03-2019 11:32:29.656 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+04-04-2019 10:29:40.998 [main] INFO  com.employee.EmployeeApplication.logStarting - Starting EmployeeApplication on DIN16004850 with PID 6596 (C:\Users\sarjaisw\Desktop\SAP\videos\employee\target\classes started by sarjaisw in C:\Users\sarjaisw\Desktop\SAP\videos\employee)
+04-04-2019 10:29:41.117 [main] INFO  com.employee.EmployeeApplication.logStartupProfileInfo - The following profiles are active: dev
+04-04-2019 10:29:43.914 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+04-04-2019 10:29:44.073 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 127ms. Found 2 repository interfaces.
+04-04-2019 10:29:44.666 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$42562cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+04-04-2019 10:29:45.034 [main] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:29:45.038 [main] INFO  com.employee.aop.AspectNotification.logBefore - servletContainer
+04-04-2019 10:29:45.322 [main] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:29:45.323 [main] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  servletContainer
+04-04-2019 10:29:45.323 [main] INFO  com.employee.aop.AspectNotification.logAfter - args []
+04-04-2019 10:29:46.568 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8443 (https) 8082 (http)
+04-04-2019 10:29:47.040 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+04-04-2019 10:29:47.042 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.16]
+04-04-2019 10:29:47.054 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\sarjaisw\Desktop\SAP\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\softwares\nodejs\setup;D:\softwares\Microsoft VS Code\bin;D:\softwares\python\pythonscript\Python36-32;D:\softwares\python\pythonscript\Python36-32\Scripts;C:\Users\sarjaisw\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Users\sarjaisw\AppData\Roaming\npm;C:\Users\sarjaisw\AppData\Roaming\Cloud Foundry;C:\Users\sarjaisw\Desktop\SAP\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\sarjaisw\Desktop\SAP\cloudConnector\sapcc-2.11.3-windows-x64;D:\softwares\vim\vim70os2\vim\vim70;D:\softwares\sonarqube-5.3\bin\windows-x86-64;.]
+04-04-2019 10:29:47.368 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+04-04-2019 10:29:47.368 [main] DEBUG o.s.web.context.ContextLoader.prepareWebApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+04-04-2019 10:29:47.368 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 5969 ms
+04-04-2019 10:29:47.964 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+04-04-2019 10:29:50.153 [main] ERROR com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:113)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e.CGLIB$jpaVendorAdapter$3(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e$$FastClassBySpringCGLIB$$d0ea5a41.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.employee.EmployeeApplication.main(EmployeeApplication.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 80 common frames omitted
+04-04-2019 10:29:50.168 [main] WARN  o.s.b.a.orm.jpa.DatabaseLookup.getDatabase - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:113)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e.CGLIB$jpaVendorAdapter$3(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e$$FastClassBySpringCGLIB$$d0ea5a41.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$22fc253e.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.employee.EmployeeApplication.main(EmployeeApplication.java:15)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 65 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 66 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 80 common frames omitted
+04-04-2019 10:29:50.436 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-08-03-2019 11:32:29.717 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
-08-03-2019 11:32:29.717 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
-08-03-2019 11:32:29.827 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-08-03-2019 11:32:29.940 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
-08-03-2019 11:32:30.080 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl.useContextualLobCreation - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
-08-03-2019 11:32:30.080 [main] INFO  org.hibernate.type.BasicTypeRegistry.register - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@c269425
-08-03-2019 11:32:30.605 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@50085d9c'
-08-03-2019 11:32:30.616 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
-08-03-2019 11:32:31.095 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
-08-03-2019 11:32:31.095 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-08-03-2019 11:32:31.308 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
-08-03-2019 11:32:31.328 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-08-03-2019 11:32:31.348 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-08-03-2019 11:32:31.369 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+04-04-2019 10:29:50.624 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+04-04-2019 10:29:50.626 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+04-04-2019 10:29:51.016 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+04-04-2019 10:29:51.236 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+04-04-2019 10:29:53.247 [main] ERROR com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.employee.EmployeeApplication.main(EmployeeApplication.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 51 common frames omitted
+04-04-2019 10:29:53.248 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator.initiateService - HHH000342: Could not obtain connection to query metadata : Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+04-04-2019 10:29:53.297 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+04-04-2019 10:29:53.317 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl.makeLobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+04-04-2019 10:29:53.326 [main] INFO  org.hibernate.type.BasicTypeRegistry.register - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@b1534d3
+04-04-2019 10:29:54.305 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+04-04-2019 10:29:56.318 [main] ERROR com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.employee.EmployeeApplication.main(EmployeeApplication.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 51 common frames omitted
+04-04-2019 10:29:56.338 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 0, SQLState: 08001
+04-04-2019 10:29:56.339 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+04-04-2019 10:29:56.373 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+04-04-2019 10:29:56.375 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+04-04-2019 10:29:56.510 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener.logMessage - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+04-04-2019 10:29:56.554 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1762)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$118/1997353766.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.employee.EmployeeApplication.main(EmployeeApplication.java:15)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+	... 17 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:115)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	... 21 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 37 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 51 common frames omitted
+04-04-2019 10:32:14.289 [main] INFO  com.employee.EmployeeApplication.logStarting - Starting EmployeeApplication on DIN16004850 with PID 4368 (C:\Users\sarjaisw\Desktop\SAP\videos\employee\target\classes started by sarjaisw in C:\Users\sarjaisw\Desktop\SAP\videos\employee)
+04-04-2019 10:32:14.292 [main] INFO  com.employee.EmployeeApplication.logStartupProfileInfo - The following profiles are active: dev
+04-04-2019 10:32:14.878 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+04-04-2019 10:32:14.948 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 63ms. Found 2 repository interfaces.
+04-04-2019 10:32:15.240 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a78dc64c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+04-04-2019 10:32:15.363 [main] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:32:15.365 [main] INFO  com.employee.aop.AspectNotification.logBefore - servletContainer
+04-04-2019 10:32:15.400 [main] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:32:15.401 [main] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  servletContainer
+04-04-2019 10:32:15.401 [main] INFO  com.employee.aop.AspectNotification.logAfter - args []
+04-04-2019 10:32:15.746 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8443 (https) 8082 (http)
+04-04-2019 10:32:15.778 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+04-04-2019 10:32:15.779 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.16]
+04-04-2019 10:32:15.785 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\sarjaisw\Desktop\SAP\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\softwares\nodejs\setup;D:\softwares\Microsoft VS Code\bin;D:\softwares\python\pythonscript\Python36-32;D:\softwares\python\pythonscript\Python36-32\Scripts;C:\Users\sarjaisw\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Users\sarjaisw\AppData\Roaming\npm;C:\Users\sarjaisw\AppData\Roaming\Cloud Foundry;C:\Users\sarjaisw\Desktop\SAP\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\sarjaisw\Desktop\SAP\cloudConnector\sapcc-2.11.3-windows-x64;D:\softwares\vim\vim70os2\vim\vim70;D:\softwares\sonarqube-5.3\bin\windows-x86-64;.]
+04-04-2019 10:32:15.900 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+04-04-2019 10:32:15.901 [main] DEBUG o.s.web.context.ContextLoader.prepareWebApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+04-04-2019 10:32:15.901 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1575 ms
+04-04-2019 10:32:16.079 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+04-04-2019 10:32:16.848 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+04-04-2019 10:32:16.909 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+04-04-2019 10:32:16.964 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+04-04-2019 10:32:16.965 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+04-04-2019 10:32:17.087 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+04-04-2019 10:32:17.219 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+04-04-2019 10:32:17.447 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl.useContextualLobCreation - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+04-04-2019 10:32:17.452 [main] INFO  org.hibernate.type.BasicTypeRegistry.register - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@15c487a8
+04-04-2019 10:32:17.938 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+04-04-2019 10:32:17.938 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - table "employee" does not exist, skipping
+04-04-2019 10:32:17.939 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - SQL Warning Code: 0, SQLState: 00000
+04-04-2019 10:32:17.939 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logWarning - sequence "hibernate_sequence" does not exist, skipping
+04-04-2019 10:32:18.226 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@49671897'
+04-04-2019 10:32:18.228 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+04-04-2019 10:32:19.726 [main] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:32:19.727 [main] INFO  com.employee.aop.AspectNotification.logBefore - interceptor
+04-04-2019 10:32:19.732 [main] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:32:19.732 [main] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  interceptor
+04-04-2019 10:32:19.732 [main] INFO  com.employee.aop.AspectNotification.logAfter - args []
+04-04-2019 10:32:19.876 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+04-04-2019 10:32:19.876 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+04-04-2019 10:32:20.335 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+04-04-2019 10:32:20.362 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+04-04-2019 10:32:20.444 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+04-04-2019 10:32:20.473 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
 	c.e.c.EmployeeController:
-	{GET /getEmployeeByEmailId/{emailId}}: getEmployeeByEmail(String)
 	{POST /addEmployee}: addemployee(Employee)
 	{DELETE /deleteEmployee/{emailId}}: deleteEmployee(String)
 	{PUT /updateEmployee/{emailId}}: updateEmployee(String,String)
 	{GET /getAllEmployees}: getEmployees()
-08-03-2019 11:32:31.369 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	{GET /getEmployeeByEmailId/{emailId}}: getEmployeeByEmail(String)
+04-04-2019 10:32:20.476 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	c.e.c.HelloWorldController:
+	{GET /api/myname}: getData(String)
+	{GET /api/hello}: getHello(String)
+04-04-2019 10:32:20.479 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ /error}: error(HttpServletRequest)
 	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-08-03-2019 11:32:31.370 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized - 7 mappings in 'requestMappingHandlerMapping'
-08-03-2019 11:32:31.400 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping.detectHandlers - Detected 0 mappings in 'beanNameHandlerMapping'
-08-03-2019 11:32:31.410 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
-08-03-2019 11:32:31.410 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-08-03-2019 11:32:31.410 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-08-03-2019 11:32:31.420 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-08-03-2019 11:32:31.591 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
-08-03-2019 11:32:31.594 [main] INFO  com.employee.EmployeeApplication.logStarted - Started EmployeeApplication in 4.09 seconds (JVM running for 4.62)
-08-03-2019 11:32:36.086 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-08-03-2019 11:32:36.086 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
-08-03-2019 11:32:36.087 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initMultipartResolver - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@77ea806f
-08-03-2019 11:32:36.088 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initLocaleResolver - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
-08-03-2019 11:32:36.090 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initThemeResolver - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
-08-03-2019 11:32:36.093 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initRequestToViewNameTranslator - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
-08-03-2019 11:32:36.097 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initFlashMapManager - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
-08-03-2019 11:32:36.098 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-08-03-2019 11:32:36.098 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 11 ms
-08-03-2019 11:32:36.105 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "//getEmployeeByEmailId/lakshmi@gmail.com", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-08-03-2019 11:32:36.127 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.Employee> com.employee.controller.EmployeeController.getEmployeeByEmail(java.lang.String) throws java.lang.Exception
-08-03-2019 11:32:36.137 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [lakshmi@gmail.com]
-08-03-2019 11:32:36.137 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:36.137 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployeeByEmail
-08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployeeByEmail
-08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:36.147 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - findByEmailId
-08-03-2019 11:32:36.167 [http-nio-8080-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  findByEmailId
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployeeByEmail
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] ERROR com.employee.aop.AspectNotification.afterThrowing - exception method getEmployeeByEmail
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployeeByEmail
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [lakshmi@gmail.com]
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] ERROR com.employee.aop.AspectNotification.afterThrowing - exception method getEmployeeByEmail
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException - Using @ExceptionHandler public org.springframework.http.ResponseEntity<com.employee.model.ResponseDTO> com.employee.exception.GlobalExceptionHandler.checkUser(com.employee.exception.UserNotFoundException)
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [com.employee.exception.UserNotFoundException: employee not found]
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:36.237 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - checkUser
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] ERROR c.e.controller.EmployeeController.checkUser - User not found exception
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  checkUser
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [com.employee.exception.UserNotFoundException: employee not found]
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] DEBUG com.employee.aop.AspectNotification.afterReturning - logging after returning 
-08-03-2019 11:32:36.247 [http-nio-8080-exec-1] DEBUG com.employee.aop.AspectNotification.afterReturning - checkUser Returned with <400 BAD_REQUEST Bad Request,com.employee.model.ResponseDTO@7116f0f1,[]>
-08-03-2019 11:32:36.287 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-08-03-2019 11:32:36.287 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [com.employee.model.ResponseDTO@7116f0f1]
-08-03-2019 11:32:36.307 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.resolveException - Resolved [com.employee.exception.UserNotFoundException: employee not found]
-08-03-2019 11:32:36.307 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
-08-03-2019 11:32:36.307 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 400 BAD_REQUEST, headers={masked}
-08-03-2019 11:32:51.336 [http-nio-8080-exec-4] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - POST "/addEmployee", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
-08-03-2019 11:32:51.337 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.ResponseDTO> com.employee.controller.EmployeeController.addemployee(com.employee.model.Employee)
-08-03-2019 11:32:51.391 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor.traceDebug - Read "application/json;charset=UTF-8" to [Employee [id=0, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
-08-03-2019 11:32:51.397 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [Employee [id=0, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
-08-03-2019 11:32:51.397 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:51.397 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - addemployee
-08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - addemployee
-08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:51.398 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - findByEmailId
-08-03-2019 11:32:51.400 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:51.401 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  findByEmailId
-08-03-2019 11:32:51.401 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [saritaj709@gmail.com]
-08-03-2019 11:32:51.407 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
-08-03-2019 11:32:51.408 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - save
-08-03-2019 11:32:51.451 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:51.451 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  save
-08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
-08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  addemployee
-08-03-2019 11:32:51.452 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
-08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
-08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  addemployee
-08-03-2019 11:32:51.453 [http-nio-8080-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [Employee [id=1, name=sarita, emailId=saritaj709@gmail.com, contactNo=814126121]]
-08-03-2019 11:32:51.454 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-08-03-2019 11:32:51.454 [http-nio-8080-exec-4] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [com.employee.model.ResponseDTO@5f8c442e]
-08-03-2019 11:32:51.456 [http-nio-8080-exec-4] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
-08-03-2019 11:32:51.457 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
-08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
-08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
-08-03-2019 11:33:20.900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
-08-03-2019 11:33:20.910 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
-08-03-2019 11:33:20.910 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+04-04-2019 10:32:20.482 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized - 9 mappings in 'requestMappingHandlerMapping'
+04-04-2019 10:32:20.505 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping.detectHandlers - Detected 0 mappings in 'beanNameHandlerMapping'
+04-04-2019 10:32:20.511 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+04-04-2019 10:32:20.512 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+04-04-2019 10:32:20.512 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+04-04-2019 10:32:20.523 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+04-04-2019 10:32:31.244 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8443 (https) 8082 (http) with context path ''
+04-04-2019 10:32:31.247 [main] INFO  com.employee.EmployeeApplication.logStarted - Started EmployeeApplication in 17.339 seconds (JVM running for 18.253)
+04-04-2019 10:32:31.249 [main] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:32:31.249 [main] INFO  com.employee.aop.AspectNotification.logBefore - getUsers
+04-04-2019 10:32:31.252 [main] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:32:31.252 [main] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getUsers
+04-04-2019 10:32:31.252 [main] INFO  com.employee.aop.AspectNotification.logAfter - args []
+04-04-2019 10:33:10.920 [https-jsse-nio-8443-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:33:10.921 [https-jsse-nio-8443-exec-4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+04-04-2019 10:33:10.921 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.initMultipartResolver - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@316d30ad
+04-04-2019 10:33:10.943 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.initLocaleResolver - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+04-04-2019 10:33:10.946 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.initThemeResolver - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+04-04-2019 10:33:10.955 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.initRequestToViewNameTranslator - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+04-04-2019 10:33:10.982 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.initFlashMapManager - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+04-04-2019 10:33:10.982 [https-jsse-nio-8443-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+04-04-2019 10:33:10.982 [https-jsse-nio-8443-exec-4] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 61 ms
+04-04-2019 10:33:11.003 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "/api/hello", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:33:11.012 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.HelloWorldResponse> com.employee.controller.HelloWorldController.getHello(java.lang.String)
+04-04-2019 10:33:11.072 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [world]
+04-04-2019 10:33:11.073 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:33:11.073 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - getHello
+04-04-2019 10:33:11.115 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:33:11.115 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getHello
+04-04-2019 10:33:11.115 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [world]
+04-04-2019 10:33:11.278 [https-jsse-nio-8443-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+04-04-2019 10:33:11.279 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [HelloWorldResponse(name=world)]
+04-04-2019 10:33:11.317 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:33:11.318 [https-jsse-nio-8443-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
+04-04-2019 10:33:45.717 [https-jsse-nio-8443-exec-1] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "/api/hello", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:33:45.718 [https-jsse-nio-8443-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.HelloWorldResponse> com.employee.controller.HelloWorldController.getHello(java.lang.String)
+04-04-2019 10:33:45.720 [https-jsse-nio-8443-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [world]
+04-04-2019 10:33:45.721 [https-jsse-nio-8443-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:33:45.725 [https-jsse-nio-8443-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getHello
+04-04-2019 10:33:45.726 [https-jsse-nio-8443-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:33:45.727 [https-jsse-nio-8443-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getHello
+04-04-2019 10:33:45.727 [https-jsse-nio-8443-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args [world]
+04-04-2019 10:33:45.734 [https-jsse-nio-8443-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+04-04-2019 10:33:45.735 [https-jsse-nio-8443-exec-1] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [HelloWorldResponse(name=world)]
+04-04-2019 10:33:45.737 [https-jsse-nio-8443-exec-1] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:33:45.738 [https-jsse-nio-8443-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
+04-04-2019 10:34:05.136 [https-jsse-nio-8443-exec-2] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - POST "/api/hello", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:34:05.190 [https-jsse-nio-8443-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+04-04-2019 10:34:05.190 [https-jsse-nio-8443-exec-2] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:34:05.191 [https-jsse-nio-8443-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 405 METHOD_NOT_ALLOWED, headers={masked}
+04-04-2019 10:34:05.194 [https-jsse-nio-8443-exec-2] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - "ERROR" dispatch for POST "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:34:05.226 [https-jsse-nio-8443-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.lookupHandlerMethod - 2 matching mappings: [{ /error}, { /error, produces [text/html]}]
+04-04-2019 10:34:05.227 [https-jsse-nio-8443-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+04-04-2019 10:34:05.230 [https-jsse-nio-8443-exec-2] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [org.apache.catalina.core.ApplicationHttpRequest@76a34ea2]
+04-04-2019 10:34:05.255 [https-jsse-nio-8443-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+04-04-2019 10:34:05.256 [https-jsse-nio-8443-exec-2] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [{timestamp=Thu Apr 04 10:34:05 IST 2019, status=405, error=Method Not Allowed, message=Request method 'POST' not supported, path=/api/hello}]
+04-04-2019 10:34:05.273 [https-jsse-nio-8443-exec-2] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:34:05.273 [https-jsse-nio-8443-exec-2] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Exiting from "ERROR" dispatch, status 405, headers={masked}
+04-04-2019 10:34:10.918 [https-jsse-nio-8443-exec-3] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "/api/hello", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:34:10.918 [https-jsse-nio-8443-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.HelloWorldResponse> com.employee.controller.HelloWorldController.getHello(java.lang.String)
+04-04-2019 10:34:10.919 [https-jsse-nio-8443-exec-3] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [world]
+04-04-2019 10:34:10.919 [https-jsse-nio-8443-exec-3] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:34:10.920 [https-jsse-nio-8443-exec-3] INFO  com.employee.aop.AspectNotification.logBefore - getHello
+04-04-2019 10:34:10.920 [https-jsse-nio-8443-exec-3] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:34:10.920 [https-jsse-nio-8443-exec-3] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getHello
+04-04-2019 10:34:10.920 [https-jsse-nio-8443-exec-3] INFO  com.employee.aop.AspectNotification.logAfter - args [world]
+04-04-2019 10:34:10.921 [https-jsse-nio-8443-exec-3] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+04-04-2019 10:34:10.921 [https-jsse-nio-8443-exec-3] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [HelloWorldResponse(name=world)]
+04-04-2019 10:34:10.922 [https-jsse-nio-8443-exec-3] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:34:10.924 [https-jsse-nio-8443-exec-3] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
+04-04-2019 10:34:23.924 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "/api/hello", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+04-04-2019 10:34:23.924 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<com.employee.model.HelloWorldResponse> com.employee.controller.HelloWorldController.getHello(java.lang.String)
+04-04-2019 10:34:23.925 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: [world]
+04-04-2019 10:34:23.925 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+04-04-2019 10:34:23.926 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logBefore - getHello
+04-04-2019 10:34:23.926 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+04-04-2019 10:34:23.926 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getHello
+04-04-2019 10:34:23.927 [https-jsse-nio-8443-exec-4] INFO  com.employee.aop.AspectNotification.logAfter - args [world]
+04-04-2019 10:34:23.927 [https-jsse-nio-8443-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+04-04-2019 10:34:23.927 [https-jsse-nio-8443-exec-4] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [HelloWorldResponse(name=world)]
+04-04-2019 10:34:23.929 [https-jsse-nio-8443-exec-4] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+04-04-2019 10:34:23.930 [https-jsse-nio-8443-exec-4] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}

@@ -1,0 +1,81 @@
+08-03-2019 11:45:49.252 [main] INFO  com.employee.EmployeeApplication.logStarting - Starting EmployeeApplication on DIN16004850 with PID 2820 (C:\Users\sarjaisw\Desktop\SAP\videos\employee\target\classes started by sarjaisw in C:\Users\sarjaisw\Desktop\SAP\videos\employee)
+08-03-2019 11:45:49.255 [main] INFO  com.employee.EmployeeApplication.logStartupProfileInfo - The following profiles are active: dev
+08-03-2019 11:45:49.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data repositories in DEFAULT mode.
+08-03-2019 11:45:49.879 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+08-03-2019 11:45:50.169 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ee940d7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-03-2019 11:45:50.582 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+08-03-2019 11:45:50.603 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+08-03-2019 11:45:50.603 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.16]
+08-03-2019 11:45:50.610 [main] INFO  o.a.c.core.AprLifecycleListener.log - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\mingw-w64\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\usr\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Library\bin;C:\Users\sarjaisw\AppData\Local\Continuum\anaconda3\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;D:\softwares\nodejs\setup;D:\softwares\Microsoft VS Code\bin;D:\softwares\python\pythonscript\Python36-32;D:\softwares\python\pythonscript\Python36-32\Scripts;C:\Users\sarjaisw\AppData\Roaming\npm\node_modules\@angular\cli\bin;C:\Users\sarjaisw\AppData\Roaming\npm;C:\Users\sarjaisw\AppData\Roaming\Cloud Foundry;C:\Users\sarjaisw\Desktop\SAP\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Users\sarjaisw\Desktop\SAP\cloudConnector\sapcc-2.11.3-windows-x64;D:\softwares\vim\vim70os2\vim\vim70;.]
+08-03-2019 11:45:50.707 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+08-03-2019 11:45:50.708 [main] DEBUG o.s.web.context.ContextLoader.prepareWebApplicationContext - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+08-03-2019 11:45:50.708 [main] INFO  o.s.web.context.ContextLoader.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1419 ms
+08-03-2019 11:45:50.900 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+08-03-2019 11:45:51.179 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+08-03-2019 11:45:51.224 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08-03-2019 11:45:51.278 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.3.7.Final}
+08-03-2019 11:45:51.280 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+08-03-2019 11:45:51.405 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+08-03-2019 11:45:51.524 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+08-03-2019 11:45:51.658 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl.useContextualLobCreation - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+08-03-2019 11:45:51.664 [main] INFO  org.hibernate.type.BasicTypeRegistry.register - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@485e13d7
+08-03-2019 11:45:52.196 [main] INFO  o.h.t.s.internal.SchemaCreatorImpl.applyImportSources - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@38588dea'
+08-03-2019 11:45:52.198 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08-03-2019 11:45:52.697 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+08-03-2019 11:45:52.697 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+08-03-2019 11:45:52.954 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+08-03-2019 11:45:52.973 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+08-03-2019 11:45:52.999 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08-03-2019 11:45:53.024 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	c.e.c.EmployeeController:
+	{GET /getEmployeeByEmailId/{emailId}}: getEmployeeByEmail(String)
+	{POST /addEmployee}: addemployee(Employee)
+	{DELETE /deleteEmployee/{emailId}}: deleteEmployee(String)
+	{PUT /updateEmployee/{emailId}}: updateEmployee(String,String)
+	{GET /getAllEmployees}: getEmployees()
+08-03-2019 11:45:53.032 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.detectHandlerMethods - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+08-03-2019 11:45:53.036 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping.handlerMethodsInitialized - 7 mappings in 'requestMappingHandlerMapping'
+08-03-2019 11:45:53.066 [main] DEBUG o.s.w.s.h.BeanNameUrlHandlerMapping.detectHandlers - Detected 0 mappings in 'beanNameHandlerMapping'
+08-03-2019 11:45:53.076 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+08-03-2019 11:45:53.077 [main] TRACE o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+08-03-2019 11:45:53.077 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping.registerHandlers - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+08-03-2019 11:45:53.095 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+08-03-2019 11:45:53.294 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+08-03-2019 11:45:53.296 [main] INFO  com.employee.EmployeeApplication.logStarted - Started EmployeeApplication in 4.412 seconds (JVM running for 4.954)
+08-03-2019 11:46:14.597 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08-03-2019 11:46:14.598 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Initializing Servlet 'dispatcherServlet'
+08-03-2019 11:46:14.598 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initMultipartResolver - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@1b4a3a1
+08-03-2019 11:46:14.600 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initLocaleResolver - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+08-03-2019 11:46:14.602 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initThemeResolver - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+08-03-2019 11:46:14.605 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initRequestToViewNameTranslator - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+08-03-2019 11:46:14.610 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.initFlashMapManager - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+08-03-2019 11:46:14.610 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.initServletBean - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+08-03-2019 11:46:14.610 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - Completed initialization in 12 ms
+08-03-2019 11:46:14.618 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.traceDebug - GET "/getAllEmployees", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+08-03-2019 11:46:14.622 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping.getHandler - Mapped to public org.springframework.http.ResponseEntity<java.util.List<com.employee.model.Employee>> com.employee.controller.EmployeeController.getEmployees()
+08-03-2019 11:46:14.630 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeForRequest - Arguments: []
+08-03-2019 11:46:14.632 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:46:14.634 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployees
+08-03-2019 11:46:14.637 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - before logging
+08-03-2019 11:46:14.637 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logBefore - getEmployees
+08-03-2019 11:46:14.674 [http-nio-8080-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator.initiateService - HHH000397: Using ASTQueryTranslatorFactory
+08-03-2019 11:46:14.747 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:46:14.748 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployees
+08-03-2019 11:46:14.748 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args []
+08-03-2019 11:46:14.751 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  after logging
+08-03-2019 11:46:14.751 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter -  Allowed execution for {}  getEmployees
+08-03-2019 11:46:14.751 [http-nio-8080-exec-1] INFO  com.employee.aop.AspectNotification.logAfter - args []
+08-03-2019 11:46:14.764 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor.writeWithMessageConverters - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+08-03-2019 11:46:14.766 [http-nio-8080-exec-1] TRACE o.s.w.s.m.m.a.HttpEntityMethodProcessor.traceDebug - Writing [[]]
+08-03-2019 11:46:14.780 [http-nio-8080-exec-1] TRACE o.s.web.servlet.DispatcherServlet.processDispatchResult - No view rendering, null ModelAndView returned.
+08-03-2019 11:46:14.781 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet.logResult - Completed 200 OK, headers={masked}
+08-03-2019 11:47:01.561 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+08-03-2019 11:47:01.564 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+08-03-2019 11:47:01.566 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+08-03-2019 11:47:01.568 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+08-03-2019 11:47:01.584 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
