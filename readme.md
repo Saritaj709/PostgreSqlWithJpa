@@ -21,6 +21,6 @@ For SSL
 
 2.Keep the certificate in resources of main application
 
-3.configure certificate details in application.properties or application.yml
+3.Configure certificate details in application.properties or application.yml
 
-4.give a configuration to redirect requests to HTTPS in your configuration 
+4.Give a configuration to redirect requests to HTTPS in your configuration 
